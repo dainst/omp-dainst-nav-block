@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+
+
+
+<locale name="de_DE" full_name="Deutsch (Deutschland)">
+	<message key="plugins.block.dainstNav">iDai</message>
+	<message key="plugins.block.dainstNav.displayName">iDai.links sidebar</message>
+	<message key="plugins.block.dainstNav.description">Dainst Links für die Sidebar</message>
+	<message key="plugins.block.dainstNav.journals">Zeitschriften</message>
+	<message key="plugins.block.dainstNav.arachne">Bücher in der Arachne</message>
+
+	<message key="plugins.block.dainstNav.category">Kategorien</message>
+	<message key="plugins.block.dainstNav.series">Reihen</message>
+	<message key="plugins.block.dainstNav.newReleases">Neuerscheinungen</message>
+	<message key="plugins.block.dainstNav.external">Mehr...</message>
+
+</locale>
