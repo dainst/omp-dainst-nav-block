@@ -14,7 +14,7 @@
 
 <locale name="en_US" full_name="U.S. English">
 	<message key="plugins.block.browse">iDai</message>
-	<message key="plugins.block.browse.displayName">iDai.links sidebar/message>
+	<message key="plugins.block.browse.displayName">iDai.links sidebar</message>
 	<message key="plugins.block.browse.description">Shows some iDai.links at the sidebar</message>
 	<message key="plugins.block.dainstNav.journals">Journals</message>
 	<message key="plugins.block.dainstNav.arachne">Books in Arachne</message>
