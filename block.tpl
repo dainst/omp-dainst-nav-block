@@ -15,6 +15,15 @@
 				</a>
 			</li>
 
+			<li class="has_submenu">
+				{translate key="plugins.block.dainstNav.external"}
+				<ul>
+					{foreach from=$contentLinks item=contentLink}
+						<li class="idai-block"><a href="{$contentLink.href}">{$contentLink.label}</a></li>
+					{/foreach}
+				</ul>
+			</li>
+
 
 			{if $browseCategoryFactory && $browseCategoryFactory->getCount()}
 				<li class="has_submenu">
@@ -46,14 +55,7 @@
 				</li>
 			{/if}
 
-			<li class="has_submenu">
-				{translate key="plugins.block.dainstNav.external"}
-				<ul>
-					{foreach from=$contentLinks item=contentLink}
-						<li class="idai-block"><a href="{$contentLink.href}">{$contentLink.label}</a></li>
-					{/foreach}
-				</ul>
-			</li>
+
 
 		</ul>
 	</nav>
