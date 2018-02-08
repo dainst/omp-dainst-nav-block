@@ -45,11 +45,14 @@
 					{translate key="plugins.block.dainstNav.series"}
 					<ul>
 						{iterate from=browseSeriesFactory item=browseSeriesItem}
-							<li class="series_{$browseSeriesItem->getId()}{if $browseBlockSelectedSeries == $browseSeriesItem->getPath() && $browseBlockSelectedSeries != ''} current{/if}">
-								<a href="{url router=$smarty.const.ROUTE_PAGE page="catalog" op="series" path=$browseSeriesItem->getPath()|escape}">
-									{$browseSeriesItem->getLocalizedTitle()|escape}
-								</a>
-							</li>
+							{assign var="seriesId" value=$browseSeriesItem->getData('id')}
+							{if $seriesCount[$seriesId] > 0}
+								<li class="series_{$browseSeriesItem->getId()}{if $browseBlockSelectedSeries == $browseSeriesItem->getPath() && $browseBlockSelectedSeries != ''} current{/if}">
+									<a href="{url router=$smarty.const.ROUTE_PAGE page="catalog" op="series" path=$browseSeriesItem->getPath()|escape}">
+										{$browseSeriesItem->getLocalizedTitle()|escape} ({$seriesCount[$seriesId]})
+									</a>
+								</li>
+							{/if}
 						{/iterate}
 					</ul>
 				</li>

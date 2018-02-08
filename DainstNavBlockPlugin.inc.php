@@ -2,6 +2,7 @@
 
 
 import('lib.pkp.classes.plugins.BlockPlugin');
+import('plugins.blocks.omp-dainst-nav-block.seriesCountDAO');
 
 class DainstNavBlockPlugin extends BlockPlugin {
 
@@ -47,9 +48,15 @@ class DainstNavBlockPlugin extends BlockPlugin {
 		$seriesDisplay = true; //$this->getSetting($press->getId(), 'browseSeries');
 		if ($seriesDisplay) {
 			// Provide a list of series to browse
+			$seriesCountDao = new SeriesCountDAO();
 			$seriesDao = DAORegistry::getDAO('SeriesDAO');
 			$series = $seriesDao->getByPressId($press->getId());
+			$seriesCount = $seriesCountDao->getSeriesCount();
 			$templateMgr->assign('browseSeriesFactory', $series);
+			$templateMgr->assign('seriesCount', $seriesCount);
+			/*$templateMgr->register_function('get_series_count', function($params, &$smarty) {
+				return $seriesCount[$params["id"]];
+			});*/
 		}
 
 		$categoriesDisplay = true; //$this->getSetting($press->getId(), 'browseCategories');
