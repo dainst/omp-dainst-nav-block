@@ -7,8 +7,8 @@
 	<message key="plugins.block.dainstNav">iDai</message>
 	<message key="plugins.block.dainstNav.displayName">iDai.links sidebar</message>
 	<message key="plugins.block.dainstNav.description">Dainst Links für die Sidebar</message>
-	<message key="plugins.block.dainstNav.journals">Zeitschriften</message>
-	<message key="plugins.block.dainstNav.arachne">Bücher in der Arachne</message>
+	<message key="plugins.block.dainstNav.journals"><![CDATA[Online-Ausgaben von DAI-Zeitschriften <br><i>iDAI.publications/journals</i>]]></message>
+	<message key="plugins.block.dainstNav.arachne"><![CDATA[Retrodigitalisate sonstiger Publikationen <br><i>in iDAI.objects/arachne</i>]]></message>
 
 	<message key="plugins.block.dainstNav.category">Kategorien</message>
 	<message key="plugins.block.dainstNav.series">Reihen</message>
