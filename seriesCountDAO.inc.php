@@ -16,7 +16,8 @@ class SeriesCountDAO extends SeriesDAO {
 		$sql = "select 
 						series_id, count(*) as pulications_count
 					from published_submissions 
-						left join submissions on published_submissions.submission_id=submissions.submission_id 
+						left join submissions on published_submissions.submission_id=submissions.submission_id
+				  	where status = 3 
 					group by series_id;";
 
 		$categoryCount = new DAOResultFactory($this->retrieve($sql), $this, '_fromRow');
