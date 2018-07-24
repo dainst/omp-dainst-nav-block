@@ -17,7 +17,7 @@
 	<message key="plugins.block.browse.displayName">iDai.links sidebar</message>
 	<message key="plugins.block.browse.description">Shows some iDai.links at the sidebar</message>
 	<message key="plugins.block.dainstNav.journals"><![CDATA[Online-Journals and Digitalised Journals of the DAI<br><i>iDAI.publications/journals</i>]]></message>
-	<message key="plugins.block.dainstNav.arachne"><![CDATA[Other digitalised publications <br><i>in idai.objects/arachne]]></message>
+	<message key="plugins.block.dainstNav.arachne"><![CDATA[Other digitalised publications <br><i>in idai.objects/arachne</i>]]></message>
 	<message key="plugins.block.dainstNav.category">Categories</message>
 	<message key="plugins.block.dainstNav.series">Series</message>
 	<message key="plugins.block.dainstNav.newReleases">New releases</message>
