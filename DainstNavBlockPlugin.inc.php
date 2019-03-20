@@ -63,7 +63,7 @@ class DainstNavBlockPlugin extends BlockPlugin {
 		if ($categoriesDisplay) {
 			// Provide a list of categories to browse
 			$categoryDao = DAORegistry::getDAO('CategoryDAO');
-			$categories = $categoryDao->getByPressId($press->getId());
+			$categories = $categoryDao->getByContextId($press->getId());
 			$templateMgr->assign('browseCategoryFactory', $categories);
 		}
 
